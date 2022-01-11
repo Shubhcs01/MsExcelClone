@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.page-action-cont {
+  background-color: green;
+  height: 3rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.cell-prop-cont {
+  background-color: greenyellow;
+  height: 3rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.address-bar-container {
+  background-color: hotpink;
+  height: 3rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.grid-container {
+  background-color: wheat;
+  height: calc(100vh - (4 * 3rem));
+}
+
+.sheet-action-cont {
+  background-color: indigo;
+  height: 3rem;
+}
+
+.home {
+  color: white;
+  padding: 0.4rem;
+}
+
+.cell-icon,
+.font-size {
+  background-color: grey;
+  width: 1.5rem;
+  margin: 5px;
+}
+
+.font {
+  background-color: white;
+  width: 7rem;
+  margin: 6px;
+}
+
+.box-1,
+.box-3 {
+  background-color: white;
+  margin: 3px;
+}
+
+.box-1 {
+  width: 5rem;
+}
+
+.box-3 {
+  width: calc(100% - 6rem);
+}
+
+.box-2 {
+  background-color: grey;
+}
