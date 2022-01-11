@@ -12,13 +12,16 @@ body {
   height: 3rem;
   display: flex;
   justify-content: flex-start;
+  align-items: flex-end;
+  padding-left: 0.5rem;
 }
 
 .cell-prop-cont {
-  background-color: greenyellow;
+  background-color: #f1f2f6;
   height: 3rem;
   display: flex;
-  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
 }
 
 .address-bar-container {
@@ -38,22 +41,24 @@ body {
   height: 3rem;
 }
 
-.home {
+.page-action {
   color: white;
-  padding: 0.4rem;
+  margin: 1rem;
 }
 
-.cell-icon,
-.font-size {
-  background-color: grey;
-  width: 1.5rem;
-  margin: 5px;
+.cell-prop-cont > * {
+  display: inline-block;
+  margin-right: 1rem;
 }
 
-.font {
-  background-color: white;
-  width: 7rem;
-  margin: 6px;
+.cell-prop-cont > select {
+  outline: none;
+  border: 3px;
+}
+
+.font-family-prop,
+.font-size-prop {
+  padding: 0.3rem;
 }
 
 .box-1,
