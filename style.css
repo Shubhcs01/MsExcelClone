@@ -37,6 +37,7 @@ body {
   background-color: white;
   height: calc(100vh - 3rem - 3rem - 3rem - 2rem);
   position: relative;
+  overflow: scroll;
 }
 
 .sheet-action-cont {
@@ -102,14 +103,14 @@ body {
 }
 
 .formula-icon {
-  width: 1.6rem;
-}
-
-.formula-bar {
-  width: 6rem;
+  width: 1.3rem;
 }
 
 .address-bar {
+  width: 6rem;
+}
+
+.formula-bar {
   width: calc(100% - 6rem - 1rem - 1rem - 1rem);
 }
 
@@ -117,25 +118,54 @@ body {
   background-color: grey;
   width: 2rem;
   height: 2rem;
+  position: fixed;
+
+  z-index: 2;
 }
 
 .address-row-cont {
-  background-color: green;
-  height: 2rem;
-  width: 10rem;
+  display: flex;
+  position: sticky;
+  top: 0;
+  left: 2rem; /*->due to dummy box */
+  background-color: #ecf0f1;
 }
 
 .address-col-cont {
-  background-color: pink;
+  background-color: #ecf0f1;
   width: 2rem;
-  height: 10rem;
+  position: sticky;
+  top: 2rem;
+  left: 0;
+  z-index: 1;
+}
+
+.col-address {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #dfe4ea;
+}
+.row-address {
+  width: 5rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #dfe4ea;
+  outline: none;
 }
 
 .cell-cont {
-  background-color: cyan;
-  width: 20rem;
-  height: 10rem;
   position: absolute;
   top: 0;
   left: 2rem;
+}
+.cell-row {
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
