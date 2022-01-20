@@ -119,7 +119,6 @@ body {
   width: 2rem;
   height: 2rem;
   position: fixed;
-
   z-index: 2;
 }
 
@@ -168,4 +167,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.color-prop {
+  position: relative;
+}
+
+.color-prop > input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
 }
